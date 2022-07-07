@@ -42,6 +42,10 @@ public class HomeResource {
                     int randomIndex = random.nextInt(folders.size());
                     Path folder = folders.get(randomIndex);
 
+                    if (storageResponse.stream().map(PostResponse::imageId).anyMatch(folder.getFileName().toString()::equals)) {
+                        continue;
+                    }
+
                     PostStorage postStorage = Jackson.newObjectMapper().readValue(Files.readString(folder.resolve("data.json")), PostStorage.class);
                     storageResponse.add(new PostResponse(
                             postStorage.getImage().getId(),
