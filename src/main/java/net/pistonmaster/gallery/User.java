@@ -18,6 +18,7 @@ public class User implements Principal {
     private final String name;
     private final String email;
     private final String avatar;
+    private final String profile;
     private final Set<String> roles = new HashSet<>();
 
     public User(JWTToken userDataStorage) {
@@ -25,7 +26,8 @@ public class User implements Principal {
                 userDataStorage.getSub(),
                 userDataStorage.getName(),
                 userDataStorage.getEmail(),
-                generateAvatar(userDataStorage.getEmail())
+                generateAvatar(userDataStorage.getEmail()),
+                generateProfile(userDataStorage.getEmail())
         );
     }
 
@@ -34,7 +36,8 @@ public class User implements Principal {
                 userDataStorage.getId(),
                 userDataStorage.getName(),
                 userDataStorage.getEmail(),
-                generateAvatar(userDataStorage.getEmail())
+                generateAvatar(userDataStorage.getEmail()),
+                generateProfile(userDataStorage.getEmail())
         );
     }
 
@@ -45,7 +48,14 @@ public class User implements Principal {
         );
     }
 
+    private static String generateProfile(String email) {
+        return String.format(
+                "https://www.gravatar.com/%s",
+                MD5Util.md5Hex(email.toLowerCase())
+        );
+    }
+
     public UserDataResponse generateUserDataResponse() {
-        return new UserDataResponse(name, avatar);
+        return new UserDataResponse(name, avatar, profile);
     }
 }

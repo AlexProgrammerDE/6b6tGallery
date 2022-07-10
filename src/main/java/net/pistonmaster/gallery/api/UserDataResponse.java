@@ -1,4 +1,4 @@
 package net.pistonmaster.gallery.api;
 
-public record UserDataResponse(String name, String avatar) {
+public record UserDataResponse(String name, String avatar, String profile) {
 }

@@ -2,6 +2,9 @@ plugins {
     application
 }
 
+java.sourceCompatibility = JavaVersion.VERSION_17
+java.targetCompatibility = JavaVersion.VERSION_17
+
 application {
     mainClass.set("net.pistonmaster.gallery.GalleryApplication")
 }
@@ -11,7 +14,6 @@ version = "1.0.0"
 
 repositories {
     mavenCentral()
-    maven("https://repository.aspose.com/repo/")
 }
 
 dependencies {

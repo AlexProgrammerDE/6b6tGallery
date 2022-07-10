@@ -1,1 +1,1 @@
-rootProject.name = "6b6tGallery"
+rootProject.name = "WebsiteGallery"
