@@ -1,2 +1,2 @@
-# PistonPost-backend
-Open source platform inspired by Reddit. 
+# 6b6tGallery
+Gallery backend for https://www.6b6t.org/gallery

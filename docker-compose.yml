@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  6b6tgallery:
+    build: .
+    container_name: 6b6tgallery
+    env_file:
+      - data.env
+    volumes:
+      - ./public:/data/websitegallery/public
+      - ./submit:/data/websitegallery/submit
+    ports:
+      - "5757:5757"
+    restart: always

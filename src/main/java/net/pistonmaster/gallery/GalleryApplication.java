@@ -33,7 +33,7 @@ public class GalleryApplication extends Application<GalleryConfiguration> {
 
     @Override
     public String getName() {
-        return "PistonPost";
+        return "WebsiteGallery";
     }
 
     @Override
