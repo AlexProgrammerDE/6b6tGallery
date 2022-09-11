@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk
+FROM openjdk:20-jdk
 
 VOLUME ["/data/websitegallery/public", "/data/websitegallery/submit"]
 COPY /build/distributions/WebsiteGallery-*.tar /data/websitegallery/WebsiteGallery.tar
