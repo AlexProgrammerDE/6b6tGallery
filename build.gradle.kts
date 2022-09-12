@@ -32,7 +32,7 @@ dependencies {
     implementation("org.sejda.imageio:webp-imageio:0.1.6")
 
     // https://mvnrepository.com/artifact/org.yaml/snakeyaml
-    implementation("org.yaml:snakeyaml:1.30")
+    implementation("org.yaml:snakeyaml:1.32")
 
     implementation("com.squareup.keywhiz:keywhiz-hkdf:0.10.1")
 
