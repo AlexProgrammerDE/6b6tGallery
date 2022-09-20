@@ -39,7 +39,7 @@ dependencies {
     // https://mvnrepository.com/artifact/com.nimbusds/nimbus-jose-jwt
     implementation("com.nimbusds:nimbus-jose-jwt:9.25.1")
 
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.0")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
 }
 
