@@ -27,7 +27,7 @@ dependencies {
     implementation("commons-io:commons-io:2.11.0")
 
     implementation("com.twelvemonkeys.servlet:servlet:3.8.3:jakarta@jar")
-    implementation("com.twelvemonkeys.imageio:imageio-jpeg:3.9.3")
+    implementation("com.twelvemonkeys.imageio:imageio-jpeg:3.9.4")
 
     implementation("org.sejda.imageio:webp-imageio:0.1.6")
 
