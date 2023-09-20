@@ -21,8 +21,8 @@ dependencies {
     implementation("io.dropwizard:dropwizard-auth:4.0.1")
     implementation("io.dropwizard:dropwizard-forms:4.0.1")
 
-    compileOnly("org.projectlombok:lombok:1.18.28")
-    annotationProcessor("org.projectlombok:lombok:1.18.28")
+    compileOnly("org.projectlombok:lombok:1.18.30")
+    annotationProcessor("org.projectlombok:lombok:1.18.30")
 
     implementation("commons-io:commons-io:2.13.0")
 
