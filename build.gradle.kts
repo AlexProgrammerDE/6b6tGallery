@@ -37,7 +37,7 @@ dependencies {
     implementation("com.squareup.keywhiz:keywhiz-hkdf:0.10.1")
 
     // https://mvnrepository.com/artifact/com.nimbusds/nimbus-jose-jwt
-    implementation("com.nimbusds:nimbus-jose-jwt:9.37")
+    implementation("com.nimbusds:nimbus-jose-jwt:9.37.1")
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
