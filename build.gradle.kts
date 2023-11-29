@@ -24,7 +24,7 @@ dependencies {
     compileOnly("org.projectlombok:lombok:1.18.30")
     annotationProcessor("org.projectlombok:lombok:1.18.30")
 
-    implementation("commons-io:commons-io:2.15.0")
+    implementation("commons-io:commons-io:2.15.1")
 
     implementation("com.twelvemonkeys.servlet:servlet:3.8.3:jakarta@jar")
     implementation("com.twelvemonkeys.imageio:imageio-jpeg:3.10.1")
