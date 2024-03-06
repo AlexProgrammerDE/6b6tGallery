@@ -17,9 +17,9 @@ repositories {
 }
 
 dependencies {
-    implementation("io.dropwizard:dropwizard-core:4.0.6")
-    implementation("io.dropwizard:dropwizard-auth:4.0.6")
-    implementation("io.dropwizard:dropwizard-forms:4.0.6")
+    implementation("io.dropwizard:dropwizard-core:4.0.7")
+    implementation("io.dropwizard:dropwizard-auth:4.0.7")
+    implementation("io.dropwizard:dropwizard-forms:4.0.7")
 
     compileOnly("org.projectlombok:lombok:1.18.30")
     annotationProcessor("org.projectlombok:lombok:1.18.30")
